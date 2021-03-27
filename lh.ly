@@ -22,7 +22,7 @@ lh-verse-A = \relative c, {
 lh-chorus-A = \relative c, {
   <ees ees'>2. bes'4
   q4. bes8 ees f ges ees
-  d2. a4
+  <d, d'>2. a'4
   g2 d'4 g,
   c,8 g' c d ees4 c
   d,2 d'4 a8 d
