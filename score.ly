@@ -1,5 +1,6 @@
 \version "2.20.0"
 
+\include "makeOctaves.ly"
 \include "rh.ly"
 \include "lh.ly"
 \include "melody.ly"
@@ -25,6 +26,10 @@ rh = \relative c' {
   \rh-intro
   \rh-verse-A
   \rh-chorus-A
+  \rh-bridge-A
+  \rh-verse-B
+  \rh-chorus-B
+  \rh-bridge-B
 
   \bar "|."
 }
@@ -35,6 +40,10 @@ lh = \relative c {
   \lh-intro
   \lh-verse-A
   \lh-chorus-A
+  \lh-bridge-A
+  \lh-verse-B
+  \lh-chorus-B
+  \lh-bridge-B
   \bar "|."
 }
 

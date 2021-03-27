@@ -1,5 +1,6 @@
 melody-full = \relative c' {
   R1*4
+  % verse A
   r2 d8 f bes8. bes16~
   bes4. bes16 f bes8 bes c a
   r2 a16 g a8 a16 g a8
@@ -13,6 +14,7 @@ melody-full = \relative c' {
   bes8 d8 c16 c~ c8 r16 bes16 d8. c16~ c8 ees~
   ees2. r4
 
+  % chorus A
   r4 r8 d16 d d8 c bes8. g16~
   g8 r r g16 d'~ d8 g,16 d'~ d8 g,
   c4 r8 a16 a a8 bes c8. c16~
@@ -30,6 +32,37 @@ melody-full = \relative c' {
   ees'4 r8 g, c d f8. g,16
   ees'4 r8 ees des8. c16~ c4
   f,8. bes16~ bes4 r2
+
+  R1*3
+
+  % verse B
+  r2 d,8 f bes8. bes16~
+  bes4. bes16 f bes8 bes d8. a16~
+  a4 r a16 g a8 a16 g a8
+  r4 a16 g a8 a8 a bes g~
+  g4. d'8~ d4. g,8~ g4. f'16( d~ d4) r8
+  bes8 d8 c16 c~ c8 bes8 bes g bes g'( f) f8 r
+
+  % chorus B
+  d16 d d8 c bes8. g16~
+  g8 r r g16 d'~ d8 g,16 d'~ d8 g,
+  c4 r8 a16 a a8 bes c8. c16~
+  c8 r r8 a16 f'~ f8 a,16 f'~ f8 a,16 bes~(
+  bes16 a g8) r g f' ees d8. ees16~
+  ees4 r8 g,16 g f'8 ees d d~
+  d8 ees r a,16 a a8 bes bes c
+  c8 r c bes ees4. d8~ d4 r8
+
+  d16 d d8 c bes8. g16~
+  g8 r r g16 d'~ d8 g,16 d'~ d8 g,16 d'~
+  d8 c r c16 c c8 d ees f~
+  f8 r f f~ f ees f d~
+  d4 r8 g, c d f g,
+  ees'4 r8 g, c d f8. g,16
+  ees'4 r8 ees des c f, bes~
+  bes2 r2
+
+  R1*16
   \bar "|."
 }
 lyricsmain = \lyricmode {
