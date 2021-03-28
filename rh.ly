@@ -18,9 +18,8 @@ rh-verse-A = \relative c' {
 
   \repeat unfold 8 { <bes' d>16 g }
   \repeat unfold 8 { <bes ees>16 g }
-  \repeat unfold 8 { <bes ees f>16 f }
-  <g bes ees>1
-  R1
+  \repeat unfold 8 { <ees' f>16 bes }
+  <g bes ees>1~ q1
 }
 
 rh-chorus-A = \relative c'' {
@@ -50,12 +49,12 @@ rh-episode-A = \relative c'' {
 
 rh-verse-B = \relative c' {
   <d f>4 q q <bes c d>
-  <c d>4 q q q
-  <a d>4 q q q
+  q4 q q q
+  <f a d>4 q q q
   q q q q
   <bes d ees>4. <ees bes'>8~ q4 <d ees>4~
   q4. <ees bes'>8~ q4 <d ees>4
-  <bes ees>4. <bes ees f>8~ q4 <ees f bes>4
+  <g, bes ees>4. <bes ees f>8~ q4 <ees f bes>4
   <f bes c>2
 }
 rh-chorus-B = \relative c' {
@@ -72,8 +71,8 @@ rh-chorus-B = \relative c' {
   <g bes ees g>4 <g bes d> q q
   <ges bes d>8. <ges bes c>16~ q4 q8 d' ees <aes, c f>~
   q4. q8~ q4 <c, f aes>4
-  <d g b>1
-  <g, d' ees>4. <d' ees bes'>8~ q4 <d ees>4
+  <d g b>2. g,4
+  <g d' ees>4. <d' ees bes'>8~ q4 <d ees>4
   <c f>4.
 }
 rh-episode-B = \relative c' {
@@ -85,7 +84,7 @@ rh-episode-B = \relative c' {
   <fis a d>8 \tuplet 3/2 4 { d'16 fis a d fis a d fis a }
   \tuplet 3/2 4 {
     bes16 a g d bes a g d c bes a bes
-    c bes c d ees d c bes c bes a g
+    c bes c d ees d c bes a bes a g
     a'' g f bes, a g d bes a g a bes
     c bes c d ees d c bes c bes c bes
     g'' f ees bes g f ees bes a g a bes
@@ -100,7 +99,7 @@ rh-bridge = \relative c'' {
   q2 \tuplet 6/4 { g''16 d c g d c } g4
   <g, bes ees>8-. \repeat unfold 7 { q-. }
   <f bes f'>8-. \repeat unfold 7 { q-. }
-  \makeOctaves 1 { ges'8 ges ges ges ges f ges a~ }
+  \makeOctaves 1 { ges'8 ges ges f ges f ges a~ }
   q1
 }
 rh-chorus-C = \relative c'' {
@@ -109,17 +108,17 @@ rh-chorus-C = \relative c'' {
   <f a c>1
   \arpeggioArrowDown
   <d f a>1\arpeggio
-  ees4.  <g, ees'>8 <g bes ees>8 q q q
-  <a c ees fis>4. q8~ q4 q8 q
+  ees4.  <g, bes ees>8~ q2
+  <a c d fis>4. q8~ q4 q8 q
   r8 <bes d> <bes des> <aes c>~ q4. <f aes d>8~
   q2 <d' d'>8 <ees ees'> <f f'>4
 
-  <g bes d g>4 <g bes d> g8 d <g bes> d
-  <ges d'>8. <ges c>16~ q4 <ges c>8 d' <ges, ees'> <aes c f>~
+  <g bes d g>4 <g bes d>8 bes, g'8 d <g bes> d
+  <ees ges d'>8. <ees ges c>16~ q4 <ees ges c>8 d' <ges, ees'> <aes c f>~
   q4. q8~ q4. <b d aes'>8~
   q8 <b d g>4. c,8 d f4
   <d ees>4. <ees bes'>8~ q4 <d ees>4
-  r4 <c f> <bes ges'>2
+  r4 <c f> <bes ees ges>2
 }
 rh-outro = \relative c' {
   \clef bass

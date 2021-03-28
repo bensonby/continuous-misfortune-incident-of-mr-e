@@ -16,8 +16,7 @@ lh-verse-A = \relative c, {
   <c c'>2. g'4
   <c, c'>2. g'4
   <f, f'>2. c'4
-  q1
-  R1
+  q1~ q1
 }
 lh-chorus-A = \relative c, {
   <ees ees'>2. bes'4
@@ -32,14 +31,14 @@ lh-chorus-A = \relative c, {
   <ees, ees'>2. bes'4
   q2~ q8 bes8 ees bes
   <d, d'>8 aes' d f8~ f4 aes, % d or c?
-  g8 d' f g <b d>2
+  g8 d' f g b2
   c,8 g' c d~ d4 c,
   f,8 c' f4 <ees, ees'>2
 }
 lh-episode-A = \relative c {
   g16 d' g a bes d bes a g d g, d' g d g, d'
   f, c' f a bes d bes a f d f, d' f d f, d'
-  e, bes' d e g bes d bes g e d bes g d' g, d'
+  e, bes' d e g bes d bes g e d bes e, bes' d bes
   ees, bes' ees f ges bes ges f f,8 c'16 f~ f16 ges f8
 }
 lh-verse-B = \relative c {
@@ -55,15 +54,15 @@ lh-verse-B = \relative c {
 lh-chorus-B = \relative c, {
   ees4. bes'8~ bes8 ees4 bes8
   ees,4. bes'8~ bes8 ees4 bes8
-  d,4. a''8~ a d, a d
-  g,4. d'8~ d g4 g,8
+  d,4. a''8~ a d, a d,
+  g4. d'8~ d g4 g,8
   c,4. c'8~ c d ees g
   d,4. d'8~ d fis d a
   g4. d'8~ d8 g4 g,8
   f4 c'8 f bes, f' aes bes,
   ees,2~ ees8 bes'4 ees8
-  ees,4. bes'8~ bes ees4 ees,8
-  d8 aes' d f~ f d aes4
+  ees,4. bes'8 ees4 ees,
+  d8 aes' d f~ f d d,4
   g8 d' f g g, d' f4
   c,8 g' c ees~ ees g c, c,
   f8 c' f c ees, bes' ees bes
@@ -103,15 +102,15 @@ lh-chorus-C = \relative c {
   ees1
   ees1
   d1
-  g,4. d'8 f4 a
+  g,4. d'8 f4 <a bes>
   <c, bes'>4. <c, g'>8 q q q q
   <d a'>8 \repeat unfold 7 { q }
   r8 <g g'> <ges ges'> <f f'>~ q4. <bes, bes'>8~
-  q8 f' bes f bes, bes' <bes' f'>4
+  q8 f' bes f bes, bes' <f' bes>4
 
-  e,,1
-  ees4. bes'8 ees bes ees,4
-  d8 d' f aes~ aes d d, g,~
+  <e, e'>2.~ e8 e'
+  ees4. bes'8 ees, bes ees,4
+  d8 d' f aes~ aes d, d, g~
   g8 f'4 d8 g,4 f'
   c8 g' c d~ d8 g, c c,
   f,8 c' f4 ees2
