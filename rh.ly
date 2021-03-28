@@ -41,7 +41,7 @@ rh-chorus-A = \relative c'' {
   r4 <a c> <ges bes des>2
 }
 
-rh-bridge-A = \relative c'' {
+rh-episode-A = \relative c'' {
   <d f bes>8. a'16~ a8 f~ f d c bes
   <a c>8. <bes d>16~ q8 q8~ q8. d,16 g a bes d
   <e a>8 g16 c~ c8 bes16 d~ d8 c16 bes~ bes16 g8.
@@ -76,7 +76,7 @@ rh-chorus-B = \relative c' {
   <g, d' ees>4. <d' ees bes'>8~ q4 <d ees>4
   <c f>4.
 }
-rh-bridge-B = \relative c' {
+rh-episode-B = \relative c' {
   \makeOctaves 1 { ees8 des c f fis }
   g'16 bes, d g a d, g a bes d, a' bes \makeOctaves 1 { d, c bes a }
   a'16 c, f a bes c, f bes c c, f c' \makeOctaves 1 { ees, d c bes }
@@ -86,10 +86,46 @@ rh-bridge-B = \relative c' {
   \tuplet 3/2 4 {
     bes16 a g d bes a g d c bes a bes
     c bes c d ees d c bes c bes a g
-    a' g f bes, a g d bes a g a bes
+    a'' g f bes, a g d bes a g a bes
     c bes c d ees d c bes c bes c bes
-    g f ees bes g f ees bes a g a bes
+    g'' f ees bes g f ees bes a g a bes
     c bes c d ees d ees f g fis g a
   }
-  <d, d'>1
+  <d, d'>2. <d' fis a d>4
+}
+rh-bridge = \relative c'' {
+  <g bes d>4 <bes d bes'>2 q4
+  <ges bes ees>4 <bes ees bes'>2 q4
+  <f bes c f>4. q8~ q4. <g d' e g>8~
+  q2 \tuplet 6/4 { g''16 d c g d c } g4
+  <g, bes ees>8-. \repeat unfold 7 { q-. }
+  <f bes f'>8-. \repeat unfold 7 { q-. }
+  \makeOctaves 1 { ges'8 ges ges ges ges f ges a~ }
+  q1
+}
+rh-chorus-C = \relative c'' {
+  <g bes d>1
+  <ges bes c>2 f'4 bes,
+  <f a c>1
+  \arpeggioArrowDown
+  <d f a>1\arpeggio
+  ees4.  <g, ees'>8 <g bes ees>8 q q q
+  <a c ees fis>4. q8~ q4 q8 q
+  r8 <bes d> <bes des> <aes c>~ q4. <f aes d>8~
+  q2 <d' d'>8 <ees ees'> <f f'>4
+
+  <g bes d g>4 <g bes d> g8 d <g bes> d
+  <ges d'>8. <ges c>16~ q4 <ges c>8 d' <ges, ees'> <aes c f>~
+  q4. q8~ q4. <b d aes'>8~
+  q8 <b d g>4. c,8 d f4
+  <d ees>4. <ees bes'>8~ q4 <d ees>4
+  r4 <c f> <bes ges'>2
+}
+rh-outro = \relative c' {
+  \clef bass
+  \repeat unfold 8 { <bes d>16 f }
+  \repeat unfold 8 { <bes c>16 f }
+  \repeat unfold 8 { <f a>16 d }
+  \repeat unfold 7 { <f bes>16 d } q16~ d~
+  <d f bes>1
 }
