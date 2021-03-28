@@ -19,7 +19,7 @@ rh-verse-A = \relative c' {
   \repeat unfold 8 { <bes' d>16 g }
   \repeat unfold 8 { <bes ees>16 g }
   \repeat unfold 8 { <ees' f>16 bes }
-  <g bes ees>1~ q1
+  <g bes ees>1~ q2 r2
 }
 
 rh-chorus-A = \relative c'' {
@@ -86,11 +86,11 @@ rh-episode-B = \relative c' {
     bes16 a g d bes a g d c bes a bes
     c bes c d ees d c bes a bes a g
     a'' g f bes, a g d bes a g a bes
-    c bes c d ees d c bes c bes c bes
+    c bes c d ees d c bes c bes a bes
     g'' f ees bes g f ees bes a g a bes
     c bes c d ees d ees f g fis g a
   }
-  <d, d'>2. <d' fis a d>4
+  <d, fis d'>2. <d' fis a d>4
 }
 rh-bridge = \relative c'' {
   <g bes d>4 <bes d bes'>2 q4
@@ -125,6 +125,6 @@ rh-outro = \relative c' {
   \repeat unfold 8 { <bes d>16 f }
   \repeat unfold 8 { <bes c>16 f }
   \repeat unfold 8 { <f a>16 d }
-  \repeat unfold 7 { <f bes>16 d } q16~ d~
-  <d f bes>1
+  \repeat unfold 7 { <f bes>16 d } q16~ <d f bes>~
+  q1
 }

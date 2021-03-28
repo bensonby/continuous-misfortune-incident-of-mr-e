@@ -22,7 +22,7 @@ melody-full = \relative c' {
   bes8 r r g f' ees d8. ees16~
   ees4 r8 g,16 g f'8 ees d d~
   d8 ees r a,16 a a8 bes bes c
-  c8 r c bes ees4. d8~ d4 r8
+  c8 r c bes ees4( d8) d~ d4 r8
 
   d16 d d8 c bes8. g16~
   g8 r r g16 d'~ d8 g,16 d'~ d8 g,16 d'~
@@ -51,14 +51,14 @@ melody-full = \relative c' {
   bes16 a g8) r g f' ees d8. ees16~
   ees4 r8 g,16 g f'8 ees d d~
   d8 ees r a,16 a a8 bes bes c
-  c8 r c bes ees4. d8~ d4 r8
+  c8 r c bes ees4( d8) d~ d4 r8
 
   d16 d d8 c bes8. g16~
   g8 r r g16 d'~ d8 g,16 d'~ d8 g,16 d'~
   d8 c r c16 c c8 d ees f~
   f8 r f f~ f ees f d~
   d4 r8 g, c d f g,
-  ees'4 r8 g, c d f8. g,16
+  ees'4 r8 g, c d f g,
   ees'4 r8 ees des c f, bes~
   bes2 r2
 
@@ -66,11 +66,11 @@ melody-full = \relative c' {
 
   % bridge
   r4 g8 a a bes c d
-  d4 ees8 ees~ ees4 ees8 f~
-  f4 d8 c~( c bes) bes g'~
-  g4 d8 c~( c bes4) bes16 g
-  bes8 bes16 g bes8 bes16 g bes8 d d bes16 g~
-  g8 bes16 g bes8 bes16 g bes8 f' d4
+  d4 ees8. ees16~ ees4 ees8 f~
+  f4 d8 c( bes4) bes8 g'~
+  g4 d8 d~( d16 c bes4) bes16 g
+  bes16 r bes16 g bes r bes16 g bes8 d d bes16 g
+  r8 bes16 g bes8 bes16 g bes8 f' d4
   ees8 ees ees d ees d ees f~
   f4 r8
 
@@ -94,7 +94,8 @@ melody-full = \relative c' {
   f,8. bes16~ bes2 r4
 
   r4 r8 ees d4 c r r8 f, c'4 d4~
-  d1 R1
+  d2. r4
+  R1
 
   \bar "|."
 }

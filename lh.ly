@@ -16,7 +16,7 @@ lh-verse-A = \relative c, {
   <c c'>2. g'4
   <c, c'>2. g'4
   <f, f'>2. c'4
-  q1~ q1
+  q1~ q2 r2
 }
 lh-chorus-A = \relative c, {
   <ees ees'>2. bes'4
@@ -77,7 +77,7 @@ lh-episode-B = \relative c {
   <ees ees'>8 bes'4 ees8 <d, d'>2
 
   <g, g'>4 <d'' g bes> <g,, g'>4 <bes' d g>
-  \repeat unfold 2 { <f, f'>4 <d'' f a> }
+  \repeat unfold 2 { <f, f'>4 <c'' f a> }
   <ees,, ees'>4 <ees'' g bes> <ees,, ees'> <bes'' ees g>
   << {
     r8 a32 d fis d fis a fis a
