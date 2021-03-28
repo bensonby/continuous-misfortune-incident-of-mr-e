@@ -16,7 +16,7 @@ lh-verse-A = \relative c, {
   <c c'>2. g'4
   <c, c'>2. g'4
   <f, f'>2. c'4
-  q1~ q2 r2
+  q1~ q4 r r2
 }
 lh-chorus-A = \relative c, {
   <ees ees'>2. bes'4

@@ -19,7 +19,7 @@ rh-verse-A = \relative c' {
   \repeat unfold 8 { <bes' d>16 g }
   \repeat unfold 8 { <bes ees>16 g }
   \repeat unfold 8 { <ees' f>16 bes }
-  <g bes ees>1~ q2 r2
+  <g bes ees>1~ q4 r r2
 }
 
 rh-chorus-A = \relative c'' {
