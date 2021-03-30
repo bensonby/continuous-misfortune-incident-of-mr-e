@@ -80,9 +80,9 @@ rh-episode-B = \relative c' {
   g'16 bes, d g a d, g a bes d, a' bes \makeOctaves 1 { d, c bes a }
   a'16 c, f a bes c, f bes c c, f c' \makeOctaves 1 { ees, d c bes }
   c' e, g c d e, g d' e g, d' e \makeOctaves 1 { f, e f g }
-  <g g'>8 \tuplet 3/2 4 { ees'16 bes g ees bes g ees bes g }
-  <fis a d>8 \tuplet 3/2 4 { d'16 fis a d fis a d fis a }
-  \tuplet 3/2 4 {
+  <g g'>8 \tuplet 3/2 8 { ees'16 bes g } \tuplet 6/4 4 { ees bes g ees bes g }
+  <fis a d>8 \tuplet 3/2 8 { d'16 fis a } \tuplet 6/4 4 {  d fis a d fis a }
+  \tuplet 6/4 4 {
     bes16 a g d bes a g d c bes a bes
     c bes c d ees d c bes a bes a g
     a'' g f bes, a g d bes a g a bes
