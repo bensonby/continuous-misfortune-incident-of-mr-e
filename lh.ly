@@ -80,8 +80,8 @@ lh-episode-B = \relative c {
   \repeat unfold 2 { <f, f'>4 <c'' f a> }
   <ees,, ees'>4 <ees'' g bes> <ees,, ees'> <bes'' ees g>
   << {
-    r8 a32 d fis d fis a fis a
-    d32 \cr d fis a d d fis a d d fis a
+    r8 \stemDown a32 d fis d \cr \stemUp fis[ a fis a]
+    d32 \stemDown d[ fis a] d \stemUp d[ fis a] d d fis a \stemNeutral
     \cl \clef treble <d,, fis a>4 \clef bass
   } \\ {
     <d,,,, d'>1
