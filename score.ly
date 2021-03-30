@@ -5,6 +5,7 @@
 \include "rh.ly"
 \include "lh.ly"
 \include "melody.ly"
+\include "chords.ly"
 
 \header {
   title = "E先生連環不幸事件"
@@ -74,6 +75,9 @@ dynamics = {
 }
 \score {
   <<
+    \new ChordNames {
+      \chords-full
+    }
     \new Staff = "melodystaff" \with {
       fontSize = #-3
       \override StaffSymbol.staff-space = #(magstep -3)
