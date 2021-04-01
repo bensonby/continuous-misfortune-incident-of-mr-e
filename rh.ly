@@ -1,24 +1,24 @@
 rh-intro = \relative c' {
   \repeat unfold 8 { <bes d>16 f }
-  \repeat unfold 8 { <bes c>16 f }
+  \repeat unfold 7 { <bes c>16 f } q f~
   \repeat unfold 8 { <f a>16 d }
   \repeat unfold 8 { <f bes>16 d }
 }
 
 rh-verse-A = \relative c' {
   \repeat unfold 8 { <bes d>16 f }
-  \repeat unfold 8 { <bes c>16 f }
+  \repeat unfold 7 { <bes c>16 f } q f~
   \repeat unfold 8 { <f a>16 d }
   \repeat unfold 7 { <f a>16 d } <f bes> d
   \repeat unfold 8 { <bes' d>16 f }
-  \repeat unfold 8 { <bes c>16 f }
+  \repeat unfold 7 { <bes c>16 f } q f~
   \repeat unfold 8 { <f a>16 d }
   \repeat unfold 4 { <f a>16 d }
   <f a>16 d q d <f bes> d <f d'> d
 
   \repeat unfold 8 { <bes' d>16 g }
   \repeat unfold 8 { <bes ees>16 g }
-  \repeat unfold 8 { <ees' f>16 bes }
+  \repeat unfold 7 { <bes ees f>16 g } q g~
   <g bes ees>1~ q4 r r2
 }
 
@@ -68,7 +68,7 @@ rh-chorus-B = \relative c' {
   <g a bes>4 q q q
   <f aes> <f aes c> <f aes d> <f f'>
 
-  <g bes ees g>4 <g bes d> q q
+  <g bes d g>4 <g bes d> q q
   <ges bes d>8. <ges bes c>16~ q4 q8 d' ees <aes, c f>~
   q4. q8~ q4 <c, f aes>4
   <d g b>2. g,4
@@ -123,7 +123,7 @@ rh-chorus-C = \relative c'' {
 rh-outro = \relative c' {
   \clef bass
   \repeat unfold 8 { <bes d>16 f }
-  \repeat unfold 8 { <bes c>16 f }
+  \repeat unfold 7 { <bes c>16 f } q f~
   \repeat unfold 8 { <f a>16 d }
   \repeat unfold 7 { <f bes>16 d } q16~ <d f bes>~
   q1
