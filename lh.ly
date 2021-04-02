@@ -64,7 +64,7 @@ lh-chorus-B = \relative c, {
   ees,4. bes'8 ees4 ees,
   d8 aes' d f~ f d d,4
   g8 d' f g g, d' f4
-  c,8 g' c ees~ ees g c, c,
+  c,8 g' c ees~ ees \cr g \cl c, c,
   f8 c' f c ees, bes' ees bes
 }
 lh-episode-B = \relative c { 
@@ -82,10 +82,11 @@ lh-episode-B = \relative c {
   << {
     r8 \stemDown a32 d fis d \cr \stemUp fis[ a fis a]
     d32 \stemDown d[ fis a] d \stemUp d[ fis a] d d fis a \stemNeutral
-    \cl \clef treble <d,, fis a>4 \clef bass
+    \cl
   } \\ {
-    <d,,,, d'>1
+    <d,,,,,, d'>2.
   } >>
+  \clef treble <d'''' fis a>4 \clef bass
 }
 lh-bridge = \relative c, {
   <g g'>8 d'' g d q d g g,
