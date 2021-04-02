@@ -61,7 +61,43 @@ melody = \relative c' {
 }
 
 dynamics = {
-  s1
+  % intro
+  s1\mf s1*3
+
+  % verse-A
+  s1\mp s1*6 s2 s4..\< s16\!
+  s1*2 s2. s8.\> s16\! s1*2
+
+  % chorus A
+  s1\mf s1*6 s2.\< s8. s16\!
+  s1 s2 s4..\< s16\! s1 s4..\> s16\! s2 s1*2
+
+  % episode A
+  s1\mf s2. s4\< s1\! s2 s16 s8.\> s4
+
+  % verse-B
+  s1\mp s1*5 s1\cresc s1
+
+  % chorus B
+  s1\mf s1*6 s2..\< s8\!
+  s1\! s1*4 s2 s4..\< s16\!
+
+  % episode B
+  s1\f s1*7
+
+  % bridge
+  s1\f s1*3 s1-\pCresc s1
+  s1\f s4..\> s16\! s2
+
+  % chorus C
+  s1\p s1*3
+  s4. s8\cresc s2 s2... s16\!
+  s8 s4.\f s2 s1
+
+  s1*3 s2 s4\> s4\! s1\mp s1
+
+  % outro
+  s1*3 s2. s4-"rit." s1
 }
 
 \paper {
