@@ -8,10 +8,10 @@
 \include "chords.ly"
 
 \header {
-  title = "E先生連環不幸事件"
-  subtitle = "Piano Accompaniment"
+  title = "呂爵安 - E先生連環不幸事件"
+  subtitle = "Voice with Piano Accompaniment"
   composer = "呂爵安、溫翰文、Cousin Fung"
-  arranger = "Arranged by Benson"
+  arranger = "Transcribed by Benson"
 }
 
 global-tempo = {
@@ -86,18 +86,19 @@ dynamics = {
   s1\f s1*7
 
   % bridge
+  \dynamicShiftA
   s1\f s1*3 s1-\pCresc s1
-  s1\f s4..\> s16\! s2
+  s1\f \hairpinA s4..\> s16\! s2
 
   % chorus C
   s1\p s1*3
   s4. s8\cresc s2 s2... s16\!
-  s8 s4.\f s2 s1
+  s8 \dynamicShiftB s4.\f s2 s1
 
   s1*3 s2 s4\> s4\! s1\mp s1
 
   % outro
-  s1*3 s2. s4-"rit." s1
+  s1*3 s2. \textScriptShiftA s4-"rit." s1
 }
 
 \paper {
@@ -108,6 +109,7 @@ dynamics = {
     }
   }
   evenFooterMarkup = \oddFooterMarkup
+  footnote-footer-padding = 2.5\mm
 }
 \score {
   <<
@@ -119,7 +121,7 @@ dynamics = {
       \override StaffSymbol.staff-space = #(magstep -3)
       \override StaffSymbol.thickness = #(magstep -3)
     } <<
-      \set Staff.instrumentName = #"vocal"
+      \set Staff.instrumentName = #"Vocal"
       \set Staff.midiInstrument = #"oboe"
       \set Staff.midiMinimumVolume = #0.9
       \set Staff.midiMaximumVolume = #1
@@ -157,13 +159,18 @@ dynamics = {
     \context {
       \Score
       % Remove all-rest staves also in the first system
-      \override VerticalAxisGroup.remove-first = ##t
+      % \override VerticalAxisGroup.remove-first = ##t
       % If only one non-empty staff in a system exists, still print the starting bar
       % \override SystemStartBar.collapse-height = #1
     }
     \context {
       \ChordNames
       \override ChordName #'font-size = #-3
+    }
+    \context {
+      \Lyrics
+      \override LyricText.font-name = #"Noto Sans CJK TC"
+      \override LyricText.font-size = #-1
     }
   }
   \midi {

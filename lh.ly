@@ -39,14 +39,16 @@ lh-episode-A = \relative c {
   g16 d' g a bes d bes a g d g, d' g d g, d'
   f, c' f a bes d bes a f d f, d' f d f, d'
   e, bes' d e g bes d bes g e d bes e, bes' d bes
-  ees, bes' ees f ges bes ges f f,8 c'16 f~ f16 ges f8
+  ees,? bes' ees? f ges bes ges f f,8 c'16 f~ f16 ges f8 % TODO: cautionary accidental?
 }
 lh-verse-B = \relative c {
   bes2. f'4
   bes,2 f'
   g,2~ g8 d'4.
   g,2~ g8 d'4.
+  \shpSlurA
   c8\( g' c d8~ d\) g,4 c,8
+  \shpSlurA
   c8\( g' c d8~ d\) g,4 c,8
   f,8 c' f4~ f8 c4 f,8
   f8 c' f c f,4-- f--
@@ -81,8 +83,9 @@ lh-episode-B = \relative c {
   <ees,, ees'>4 <ees'' g bes> <ees,, ees'> <bes'' ees g>
   << {
     r8 \stemDown a32 d fis d \cr \stemUp fis[ a fis a]
-    d32 \stemDown d[ fis a] d \stemUp d[ fis a] d d fis a \stemNeutral
+    d32 \stemDown d[ fis a] d \stemUp d[ fis a] d \ottava #1 d fis a \stemNeutral
     \cl
+    \ottava #0
   } \\ {
     <d,,,,,, d'>2.
   } >>
@@ -92,7 +95,8 @@ lh-bridge = \relative c, {
   <g g'>8 d'' g d q d g g,
   <ges, ges'>8 ees'' ges ees q ees ges ges,
   <f, f'>8 bes' c f~ f c bes <e,, e'>8~
-  q8 bes''' c e e,4 e,
+  % \once \override Beam.auto-knee-gap = #4 TODO: use knee beam?
+  q8 bes''' c e e,4 e, % TODO: repeated accidental?
 
   <c c'>8-. \repeat unfold 7 { q-. }
   <d d'>8-. \repeat unfold 7 { q-. }
@@ -110,7 +114,7 @@ lh-chorus-C = \relative c {
   q8 f' bes f bes, bes' <f' bes>4
 
   <e, e'>2.~ e8 e'
-  ees4. bes'8 ees, bes ees,4
+  ees?4. bes'8 ees, bes ees,4
   d8 d' f aes~ aes d, d, g~
   g8 f'4 d8 g,4 f'
   c8 g' c d~ d8 g, c c,

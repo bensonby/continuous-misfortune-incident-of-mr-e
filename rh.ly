@@ -14,12 +14,12 @@ rh-verse-A = \relative c' {
   \repeat unfold 7 { <bes c>16 f } q f~
   \repeat unfold 8 { <f a>16 d }
   \repeat unfold 4 { <f a>16 d }
-  <f a>16 d q d <f bes> d <f d'> d
+  <f a>16 d q d <f bes> d <bes' d> f
 
-  \repeat unfold 8 { <bes' d>16 g }
+  \repeat unfold 8 { <bes d>16 g }
   \repeat unfold 8 { <bes ees>16 g }
   \repeat unfold 7 { <bes ees f>16 g } q g~
-  <g bes ees>1~ q4 r r2
+  <g bes ees>1~ q4 r r2 \break
 }
 
 rh-chorus-A = \relative c'' {
@@ -44,7 +44,7 @@ rh-episode-A = \relative c'' {
   <d f bes>8.\( a'16~ a8 f~ f d c bes
   <a c>8. <bes d>16~ q8 q8~ q8.\) d,16\( g a bes d
   <e a>8 g16 c~ c8 bes16 d~ d8 c16 bes~ bes16 g8.\)
-  <ees ges>8\( <ees c'>16 q~ q4\) r16 bes'\( ges f bes, ges f ees
+  <ees? ges>8\( <ees c'>16 q~ q4\) r16 bes'\( ges f bes, ges f ees
   <d f>4\)
 }
 
@@ -87,12 +87,18 @@ rh-episode-B = \relative c' {
   \tuplet 6/4 4 {
     bes16 a g \ottava #0 d bes a g d c bes a bes
     c bes c d ees d c bes a bes a g
-    \ottava #1 a'' g f \ottava #0 bes, a g d bes a g a bes
+    \ottava #1 a'' g \ottava #0
+    \override Score.FootnoteItem.font-size = #-2
+    \footnote #'(2 . 2) \markup {
+      \fontsize #-2
+      "MV的音樂和鋼琴版的影像都是D音，但鋼琴版的聲音是F音，由於D音比較合理所以這裡選擇了D音。"
+    }
+    d bes a g d bes a g a bes
     c bes c d ees d c bes c bes a bes
     g'' f ees bes g f ees bes a g a bes
     c bes c d ees d ees f g fis g a
   }
-  <d, fis d'>2. <d' fis a d>4->
+  <d, fis d'>2. \ottava #1 <d' fis a d>4-> \ottava #0
 }
 rh-bridge = \relative c'' {
   <g bes d>4 <bes d bes'>2 q4
