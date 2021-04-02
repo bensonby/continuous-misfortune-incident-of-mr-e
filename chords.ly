@@ -18,7 +18,7 @@ chords-full = \chordmode {
 
   % verse-B
   bes1 bes:sus2 g:m9 g:m9
-  c1:m9 c:m9 ees/f ees2/f q4 f4
+  c1:m9 c:m9 ees/f ees2/f q4 f:sus4
 
   % chorus-B
   ees1:maj7 ees:m6 d:m7 g2.:m11 g4:m7

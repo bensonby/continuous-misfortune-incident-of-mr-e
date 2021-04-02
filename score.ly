@@ -69,7 +69,7 @@ dynamics = {
   s1*2 s2. s8.\> s16\! s1*2
 
   % chorus A
-  s1\mf s1*6 s2.\< s8. s16\!
+  s1\mf s1*2 s2 s2\< s1\! s1*2 s2.\< s8. s16\!
   s1 s2 s4..\< s16\! s1 s4..\> s16\! s2 s1*2
 
   % episode A
