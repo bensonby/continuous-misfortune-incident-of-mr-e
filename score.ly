@@ -182,3 +182,75 @@ dynamics = {
     }
   }
 }
+
+\book {
+  \bookOutputSuffix "mini"
+  #(set! paper-alist (cons '("snippet" . (cons (* 200 mm) (* 50 mm))) paper-alist))
+  \header {
+    title = "呂爵安 - E先生連環不幸事件 (Piano Version)"
+    subtitle = ""
+  }
+  \paper {
+    #(set-paper-size "snippet")
+    indent = 0
+    tagline = ##f
+    print-all-headers = ##f
+    evenHeaderMarkup = ##f
+    oddHeaderMarkup = ##f
+    evenFooterMarkup = ##f
+    oddFooterMarkup = ##f
+    % top-margin = 1\mm
+    top-markup-spacing.basic-distance = #1 %-dist. from bottom of top margin to the first markup/title
+    markup-system-spacing.basic-distance = #2 %-dist. from header/title to first system
+    top-system-spacing.basic-distance = #1 %-dist. from top margin to system in pages with no titles
+    system-system-spacing.basic-distance = #1 %-dist. from top margin to system in pages with no titles
+    last-bottom-spacing.basic-distance = #1 %-pads music from copyright block
+  }
+
+  \score {
+    \new StaffGroup <<
+      \new ChordNames {
+        \chords-full
+      }
+      \new Staff = "melodystaff" \with {
+        fontSize = #-3
+        \override StaffSymbol.staff-space = #(magstep -3)
+        \override StaffSymbol.thickness = #(magstep -3)
+      } <<
+        \set Staff.instrumentName = #"Vocal"
+        \set Staff.midiInstrument = #"oboe"
+        \set Staff.midiMinimumVolume = #0.9
+        \set Staff.midiMaximumVolume = #1
+        \new Voice = "melody" {
+          \melody
+        }
+        \context Lyrics = "lyrics" { \lyricsto "melody" { \lyricsmain } }
+      >>
+      \new PianoStaff <<
+        \new Staff = "right" { \keepWithTag #'mini \rh }
+        \new Dynamics = "dynamics" { \keepWithTag #'mini \dynamics }
+        \new Staff = "left" { \keepWithTag #'mini \lh }
+      >>
+    >>
+    \layout {
+      #(layout-set-staff-size 15)
+      \context {
+        % add the RemoveEmptyStaffContext that erases rest-only staves
+        \Staff \RemoveEmptyStaves
+      }
+      \context {
+        \Voice
+        % \override Script.stencil = #bold-tenuto-script-stencil
+      }
+      \context {
+        \ChordNames
+        \override ChordName #'font-size = #-2
+      }
+      \context {
+        \Lyrics
+        \override LyricText.font-name = #"Noto Sans CJK TC"
+        \override LyricText.font-size = #-1
+      }
+    }
+  }
+}
