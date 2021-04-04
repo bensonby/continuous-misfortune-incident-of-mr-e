@@ -60,7 +60,10 @@ rh-verse-B = \relative c' {
   <f bes c>2
 }
 rh-chorus-B = \relative c' {
-  <bes bes'>4-- <c c'>--
+  \scriptShiftA
+  <bes bes'>4--
+  \scriptShiftA
+  <c c'>--
   <g' bes d>4 q q q
   <ges bes c>4 q q q
   <f a c>4 q q q
@@ -88,14 +91,13 @@ rh-episode-B = \relative c' {
     bes16 a g \ottava #0 d bes a g d c bes a bes
     c bes c d ees d c bes a bes a g
     \ottava #1 a'' g
-    %{
-    \override Score.FootnoteItem.font-size = #-
-    \footnote #'(-2 . -4) \markup { % TODO: footnote notation?
-      \fontsize #-2
-      "MV的音樂和鋼琴版的影像都是D音，但鋼琴版的聲音是F音，由於D音比較合理所以這裡選擇了D音。"
+    \tag #'mini {
+      \footnote #'(-2 . -4) \markup { % TODO: footnote notation?
+        \fontsize #-2
+        "MV的音樂和鋼琴版的影像都是D音，但鋼琴版的聲音是F音，由於D音比較合理所以這裡選擇了D音。"
+      } d
     }
-    %}
-    d \ottava #0 bes a g d bes a g a bes
+    \tag #'print { d } \ottava #0 bes a g d bes a g a bes
     c bes c d ees d c bes c bes a bes
     g'' f ees bes g f ees bes a g a bes
     c bes c d ees d ees f g fis g a

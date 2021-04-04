@@ -25,6 +25,7 @@ global = {
 rh = \relative c' {
   \clef bass
   \metronomePaddingA
+  \tag #'mini { \metronomePaddingB }
   \global-tempo
   \global
   \rh-intro
@@ -82,9 +83,11 @@ dynamics = {
 
   % chorus B
   s1\mf s1*6 s2..\< s8\!
-  s1\! s1*4 s2 s4..\< s16\!
+  s1\! s1*4 s2
+  s4..\< s16\!
 
   % episode B
+  \tag #'mini { \dynamicShiftD }
   s1\ff s1*7
 
   % bridge
@@ -140,7 +143,7 @@ dynamics = {
         \set Staff.midiInstrument = #"acoustic grand"
         \set Staff.midiMinimumVolume = #0.6
         \set Staff.midiMaximumVolume = #0.7
-        \rh
+        \removeWithTag #'mini \rh
       }
       \new Dynamics = "Dynamics_pf" \removeWithTag #'mini \dynamics
       \new Staff = "left" {
@@ -188,8 +191,13 @@ dynamics = {
   \bookOutputSuffix "mini"
   #(set! paper-alist (cons '("snippet" . (cons (* 200 mm) (* 50 mm))) paper-alist))
   \header {
-    title = "呂爵安 - E先生連環不幸事件 (Piano Version)"
+    piece = "呂爵安 - E先生連環不幸事件 (Piano Version)"
+    opus = "Transcribed by Benson"
+    title = ""
     subtitle = ""
+    subsubtitle = ""
+    composer = ""
+    arranger = ""
   }
   \paper {
     #(set-paper-size "snippet")
@@ -203,9 +211,9 @@ dynamics = {
     % top-margin = 1\mm
     top-markup-spacing.basic-distance = #1 %-dist. from bottom of top margin to the first markup/title
     markup-system-spacing.basic-distance = #2 %-dist. from header/title to first system
-    top-system-spacing.basic-distance = #1 %-dist. from top margin to system in pages with no titles
+    top-system-spacing.basic-distance = #0.6 %-dist. from top margin to system in pages with no titles
     system-system-spacing.basic-distance = #1 %-dist. from top margin to system in pages with no titles
-    last-bottom-spacing.basic-distance = #1 %-pads music from copyright block
+    last-bottom-spacing.basic-distance = #0.3 %-pads music from copyright block
   }
 
   \score {
@@ -250,12 +258,12 @@ dynamics = {
       }
       \context {
         \ChordNames
-        \override ChordName #'font-size = #-2
+        \override ChordName #'font-size = #0
       }
       \context {
         \Lyrics
         \override LyricText.font-name = #"Noto Sans CJK TC"
-        \override LyricText.font-size = #-1
+        \override LyricText.font-size = #0
       }
     }
   }

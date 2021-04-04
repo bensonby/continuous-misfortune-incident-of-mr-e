@@ -52,7 +52,11 @@ lh-verse-B = \relative c {
   \shpSlurA
   c8\( g' c d8~ d\) g,4 c,8
   f,8 c' f4~ f8 c4 f,8
-  f8 c' f c f,4-- f--
+  f8 c' f c
+  \scriptShiftB
+  f,4--
+  \scriptShiftA
+  f--
 }
 lh-chorus-B = \relative c, {
   ees4. bes'8~ bes8 ees4 bes8

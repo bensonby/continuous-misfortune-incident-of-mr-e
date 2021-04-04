@@ -34,9 +34,9 @@ chords-full = \chordmode {
   g1:m f ees d
 
   % bridge
-  g1:m ees:m/g bes2.:sus2/f s8 c:2/e
+  g1:m ees:m/ges bes2.:sus2/f s8 c:2/e
   s1
-  c1:m7 bes/d ees2.:m s8 % TODO: add 9
+  c1:m7 bes/d ees2.:m s8
   f8 s2 f:sus4
 
   % chorus-C
