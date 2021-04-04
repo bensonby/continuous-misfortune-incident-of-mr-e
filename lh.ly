@@ -40,7 +40,7 @@ lh-episode-A = \relative c {
   g16 d' g a bes d bes a g d g, d' g d g, d'
   f, c' f a bes d bes a f d f, d' f d f, d'
   e, bes' d e g bes d bes g e d bes e, bes' d bes
-  ees,? bes' ees? f ges bes ges f f,8 c'16 f~ f16 ges f8 % TODO: cautionary accidental?
+  ees,! bes' ees! f ges bes ges f f,8 c'16 f~ f16 ges f8
 }
 lh-verse-B = \relative c {
   bes2. f'4
@@ -64,7 +64,7 @@ lh-chorus-B = \relative c, {
   d,4. a''8~\( a d, a d,\)
   g4. d'8~ d g4 g,8
   c,4. c'8~\( c d ees g\)
-  d,4. d'8~\( d fis d a\) % TODO: stem direction of first D?
+  d,4. d'8~\( d fis d a\)
   g4. d'8~ d8 g4 g,8
   f4\( c'8 f\) bes,\( f' aes bes,\)
   ees,2~ ees8 bes'4 ees8
@@ -86,14 +86,7 @@ lh-episode-B = \relative c {
   <g, g'>4 <d'' g bes> <g,, g'>4 <bes' d g>
   \repeat unfold 2 { <f, f'>4 <c'' f a> }
   <ees,, ees'>4 <ees'' g bes> <ees,, ees'> <bes'' ees g>
-  << {
-    r8 \stemDown a32 d fis d \cr \stemUp fis[ a fis a]
-    d32 \stemDown d[ fis a] d \stemUp d[ fis a] d \ottava #1 d fis a \stemNeutral
-    \cl
-    \ottava #0
-  } \\ {
-    <d,,,,,, d'>2.
-  } >>
+  <d,, d'>2.
   \clef treble <d'''' fis a>4-> \clef bass
 }
 lh-bridge = \relative c, {
@@ -101,9 +94,9 @@ lh-bridge = \relative c, {
   <ges, ges'>8 ees'' ges ees q ees ges ges,
   <f, f'>8-> bes' c f~-> f c bes <e,, e'>8~->
   \tag #'mini {
-    \once \override Beam.auto-knee-gap = #3 % TODO: use knee beam?
+    \once \override Beam.auto-knee-gap = #3
   }
-  q8 bes''' c e e,4\( e,\) % TODO: repeated accidental?
+  q8 bes''' c e e,4\( \suppressAccidental e,\)
 
   <c c'>8-. \repeat unfold 7 { q-. }
   <d d'>8-. \repeat unfold 7 { q-. }

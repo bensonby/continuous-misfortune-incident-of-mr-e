@@ -17,3 +17,5 @@ scriptShiftA = \once \override Script.padding = #0.3
 scriptShiftB = \once \override Script.padding = #0.4
 metronomePaddingA = \once \override Score.MetronomeMark.padding = #4
 metronomePaddingB = \once \override Score.MetronomeMark.padding = #2
+
+suppressAccidental = \once \override Accidental #'stencil = ##f

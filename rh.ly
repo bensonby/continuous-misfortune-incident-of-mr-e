@@ -44,7 +44,7 @@ rh-episode-A = \relative c'' {
   <d f bes>8.\( a'16~ a8 f~ f d c bes
   <a c>8. <bes d>16~ q8 q8~ q8.\) d,16\( g a bes d
   <e a>8 g16 c~ c8 bes16 d~ d8 c16 bes~ bes16 g8.\)
-  <ees? ges>8\( <ees c'>16 q~ q4\) r16 bes'\( ges f bes, ges f ees
+  <ees! ges>8\( <ees c'>16 q~ q4\) r16 bes'\( ges f bes, ges f ees
   <d f>4\)
 }
 
@@ -92,7 +92,7 @@ rh-episode-B = \relative c' {
     c bes c d ees d c bes a bes a g
     \ottava #1 a'' g
     \tag #'mini {
-      \footnote #'(-2 . -4) \markup { % TODO: footnote notation?
+      \footnote #'(-2 . -4) \markup {
         \fontsize #-2
         "MV的音樂和鋼琴版的影像都是D音，但鋼琴版的聲音是F音，由於D音比較合理所以這裡選擇了D音。"
       } d
@@ -102,7 +102,15 @@ rh-episode-B = \relative c' {
     g'' f ees bes g f ees bes a g a bes
     c bes c d ees d ees f g fis g a
   }
-  <d, fis d'>2. \ottava #1 <d' fis a d>4-> \ottava #0 % TODO ottava starting point
+  << {
+    \stemNeutral <d, fis d'>2. s4
+  } \\ {
+    \cl a,8\rest \stemDown a,32 d fis d \cr \stemUp fis[ a fis a]
+    d32 \stemDown d[ fis a] d \stemUp d[ fis a] d \ottava #1
+    \set Staff.ottavation = #"8"
+    d fis a \stemNeutral
+    <d, fis a d>4-> \ottava #0
+  } >>
 }
 rh-bridge = \relative c'' {
   <g bes d>4\( <bes d bes'>2 q4\)
