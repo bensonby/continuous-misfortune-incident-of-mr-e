@@ -14,16 +14,19 @@ chords-full = \chordmode {
   c1:m9 f2 ees:m7
 
   % episode-A
-  g1:m7 f2:6.11 bes/f e1:m7.5- ees2:m f:9- % TODO: add minor 9?
+  g1:m7 
+  \set chordNameSeparator = \markup { "/" }
+  f1:6.11 e1:m7.5- ees2:m f:sus4.9-
 
   % verse-B
   bes1 bes:sus2 g:m9 g:m9
   c1:m9 c:m9 ees/f ees2/f q4 f:sus4
 
   % chorus-B
-  ees1:maj7 ees:m6 d:m7 g2.:m11 g4:m7
-  c1:m7 d:7 g:m9 f2:m bes:7
-  ees1:maj7 ees:m6 d:dim g1:7
+  ees1:maj7 ees:m6 d:m7 g2.:m11 g4:m
+  c1:m7 d:7
+  g:m9 f2:m bes:7
+  ees1:maj7 ees:m6 d:m7.5- g1:7
   c1:m9 f2 ees:m7
 
   % episode-B
@@ -31,7 +34,7 @@ chords-full = \chordmode {
   g1:m f ees d
 
   % bridge
-  g1:m ees:m/g bes2.:sus2/f s8 c:2/e % TODO; add 2
+  g1:m ees:m/g bes2.:sus2/f s8 c:2/e
   s1
   c1:m7 bes/d ees2.:m s8 % TODO: add 9
   f8 s2 f:sus4
@@ -39,7 +42,7 @@ chords-full = \chordmode {
   % chorus-C
   ees1:maj7 ees:m6 d:m7 g:m9
   c1:m7 d:7 r8 g:m ges f:m s4. bes8:7 s1
-  e1:m7.5- ees:m6 d2.:dim s8 g:7 s1
+  e1:m7.5- ees:m6 d2.:m7.5- s8 g:9- s g4.:7 g2:sus4.7
   c1:m9 f2 ees:m
 
   % outro

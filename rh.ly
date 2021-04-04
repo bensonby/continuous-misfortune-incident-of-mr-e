@@ -14,12 +14,12 @@ rh-verse-A = \relative c' {
   \repeat unfold 7 { <bes c>16 f } q f~
   \repeat unfold 8 { <f a>16 d }
   \repeat unfold 4 { <f a>16 d }
-  <f a>16 d q d <f bes> d <bes' d> f
+  <f a>16 d q d <f bes> d <bes' d> d,
 
-  \repeat unfold 8 { <bes d>16 g }
+  \repeat unfold 8 { <bes' d>16 g }
   \repeat unfold 8 { <bes ees>16 g }
   \repeat unfold 7 { <bes ees f>16 g } q g~
-  <g bes ees>1~ q4 r r2 \break
+  <g bes ees>1~ q4 r r2 % \break
 }
 
 rh-chorus-A = \relative c'' {
@@ -33,8 +33,8 @@ rh-chorus-A = \relative c'' {
   <a c>4 q <a ees'> <bes d> <aes c>4\( d8 ees f g \tuplet 3/2 4 { aes8 bes c }
 
   <bes d>16\) g \repeat unfold 7 { <bes d>16 g }
-  q16 ges \repeat unfold 4 { <bes c>16 ges } <bes d> ges <bes ees> ges <aes f'>8~
-  q4 q8\( q~ q <aes ees'> <aes f'> <g b d>~
+  q16 ges \repeat unfold 3 { <bes c>16 ges } <bes c>\( ges <bes d> ges <bes ees> ges <aes f'>8~
+  q4\) q8\( q~ q <aes ees'> <aes f'> <g b d>~
   q2\) d4\( <g, b>\)
   <d' ees>4. <ees bes'>8~ q2
   r4 <a c> <ges bes des>2
@@ -56,11 +56,11 @@ rh-verse-B = \relative c' {
   q q q q
   <bes d ees>4. <ees bes'>8~ q4 <d ees>4~
   q4. <ees bes'>8~ q4 <d ees>4
-  <g, bes ees>4. <bes ees f>8~ q4 <ees f bes>4--
-  <f bes c>2--
+  <g, bes ees>4. <bes ees f>8~ q4 <ees f bes>4
+  <f bes c>2
 }
 rh-chorus-B = \relative c' {
-  <bes bes'>4 <c c'>
+  <bes bes'>4-- <c c'>--
   <g' bes d>4 q q q
   <ges bes c>4 q q q
   <f a c>4 q q q
@@ -78,8 +78,8 @@ rh-chorus-B = \relative c' {
   <c f>4.
 }
 rh-episode-B = \relative c' {
-  \makeOctaves 1 { ees8 des c f fis }
-  g'16 bes, d g a d, g a bes d, a' bes \makeOctaves 1 { d, c bes a }
+  \makeOctaves 1 { ees8^\mp\( des c\) f\(^\f fis }
+  g'16\) bes, d g a d, g a bes d, a' bes \makeOctaves 1 { d, c bes a }
   a'16 c, f a bes c, f bes c c, f c' \makeOctaves 1 { ees, d c bes }
   c' e, g c d e, g d' e g, d' e \makeOctaves 1 { f, e f g }
   <g g'>8 \tuplet 3/2 8 { ees'16 bes g } \tuplet 6/4 4 { ees bes g ees bes g }
@@ -87,23 +87,25 @@ rh-episode-B = \relative c' {
   \tuplet 6/4 4 {
     bes16 a g \ottava #0 d bes a g d c bes a bes
     c bes c d ees d c bes a bes a g
-    \ottava #1 a'' g \ottava #0
-    \override Score.FootnoteItem.font-size = #-2
-    \footnote #'(2 . 2) \markup {
+    \ottava #1 a'' g
+    %{
+    \override Score.FootnoteItem.font-size = #-
+    \footnote #'(-2 . -4) \markup { % TODO: footnote notation?
       \fontsize #-2
       "MV的音樂和鋼琴版的影像都是D音，但鋼琴版的聲音是F音，由於D音比較合理所以這裡選擇了D音。"
     }
-    d bes a g d bes a g a bes
+    %}
+    d \ottava #0 bes a g d bes a g a bes
     c bes c d ees d c bes c bes a bes
     g'' f ees bes g f ees bes a g a bes
     c bes c d ees d ees f g fis g a
   }
-  <d, fis d'>2. \ottava #1 <d' fis a d>4-> \ottava #0
+  <d, fis d'>2. \ottava #1 <d' fis a d>4-> \ottava #0 % TODO ottava starting point
 }
 rh-bridge = \relative c'' {
-  <g bes d>4 <bes d bes'>2 q4
-  <ges bes ees>4 <bes ees bes'>2 q4
-  <f bes c f>4. q8~ q4. <g d' e g>8~
+  <g bes d>4\( <bes d bes'>2 q4\)
+  <ges bes ees>4\( <bes ees bes'>2 q4\)
+  <f bes c f>4.-> q8~-> q4. <g d' e g>8~->
   q2 \tuplet 6/4 { g''16\( d c g d c } g4\)
   <g, bes ees>8-. \repeat unfold 7 { q-. }
   <f bes f'>8-. \repeat unfold 7 { q-. }

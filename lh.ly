@@ -32,6 +32,7 @@ lh-chorus-A = \relative c, {
   q2~ q8 bes8 ees bes
   <d, d'>8\( aes' d f8~ f4\) aes, % d or c?
   g8\( d' f g b2\)
+  \shpSlurA
   c,8\( g' c d~ d4\) c,
   f,8\( c' f4\) <ees, ees'>2
 }
@@ -59,7 +60,7 @@ lh-chorus-B = \relative c, {
   d,4. a''8~\( a d, a d,\)
   g4. d'8~ d g4 g,8
   c,4. c'8~\( c d ees g\)
-  d,4. d'8~\( d fis d a\)
+  d,4. d'8~\( d fis d a\) % TODO: stem direction of first D?
   g4. d'8~ d8 g4 g,8
   f4\( c'8 f\) bes,\( f' aes bes,\)
   ees,2~ ees8 bes'4 ees8
@@ -94,9 +95,9 @@ lh-episode-B = \relative c {
 lh-bridge = \relative c, {
   <g g'>8 d'' g d q d g g,
   <ges, ges'>8 ees'' ges ees q ees ges ges,
-  <f, f'>8 bes' c f~ f c bes <e,, e'>8~
+  <f, f'>8-> bes' c f~-> f c bes <e,, e'>8~->
   % \once \override Beam.auto-knee-gap = #4 TODO: use knee beam?
-  q8 bes''' c e e,4 e, % TODO: repeated accidental?
+  q8 bes''' c e e,4\( e,\) % TODO: repeated accidental?
 
   <c c'>8-. \repeat unfold 7 { q-. }
   <d d'>8-. \repeat unfold 7 { q-. }
@@ -111,19 +112,19 @@ lh-chorus-C = \relative c {
   <c, bes'>4. <c, g'>8 q q q q
   <d a'>8 \repeat unfold 5 { q } q-> q->
   r8 <g g'>-> <ges ges'>-> <f f'>->~ q4. <bes, bes'>8~
-  q8 f' bes f bes, bes' <f' bes>4
+  q8 f' bes f bes,\( bes' <f' bes>4\)
 
   <e, e'>2.~ e8 e'
   ees?4. bes'8 ees, bes ees,4
-  d8 d' f aes~ aes d, d, g~
-  g8 f'4 d8 g,4 f'
+  d8 d' f aes~-> aes d, d, g~->
+  g8 f'4-> d8 g,4\( f'\)
   c8 g' c d~ d8 g, c c,
-  f,8 c' f4 ees2
+  f,8\( c' f4\) ees2
 }
 lh-outro = \relative c, {
   <bes bes'>2.~ q8 f'
   q2. f4
   <g, g'>2. d'4
   q1
-  <bes, bes'>1
+  \ottava #-1 <bes, bes'>1 \ottava #0
 }

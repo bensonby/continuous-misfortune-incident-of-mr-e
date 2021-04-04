@@ -10,6 +10,7 @@
 \header {
   title = "呂爵安 - E先生連環不幸事件"
   subtitle = "Voice with Piano Accompaniment"
+  subsubtitle = "根據Piano Version編寫"
   composer = "呂爵安、溫翰文、Cousin Fung"
   arranger = "Transcribed by Benson"
 }
@@ -23,6 +24,7 @@ global = {
 
 rh = \relative c' {
   \clef bass
+  \metronomePaddingA
   \global-tempo
   \global
   \rh-intro
@@ -83,7 +85,7 @@ dynamics = {
   s1\! s1*4 s2 s4..\< s16\!
 
   % episode B
-  s1\f s1*7
+  s1\ff s1*7
 
   % bridge
   \dynamicShiftA
@@ -109,7 +111,8 @@ dynamics = {
     }
   }
   evenFooterMarkup = \oddFooterMarkup
-  footnote-footer-padding = 2.5\mm
+  footnote-footer-padding = 4.5\mm
+  last-bottom-spacing.basic-distance = #11
 }
 \score {
   <<
@@ -165,7 +168,7 @@ dynamics = {
     }
     \context {
       \ChordNames
-      \override ChordName #'font-size = #-3
+      \override ChordName #'font-size = #-1
     }
     \context {
       \Lyrics
