@@ -89,7 +89,8 @@ dynamics = {
 
   % bridge
   \dynamicShiftA
-  s1\f s1*3 s1-\pCresc s1
+  \tag #'mini { \dynamicShiftC }
+  s1\f s1*3 \tag #'mini { \textScriptShiftA } s1-\pCresc s1
   s1\f \hairpinA s4..\> s16\! s2
 
   % chorus C
@@ -141,12 +142,12 @@ dynamics = {
         \set Staff.midiMaximumVolume = #0.7
         \rh
       }
-      \new Dynamics = "Dynamics_pf" \dynamics
+      \new Dynamics = "Dynamics_pf" \removeWithTag #'mini \dynamics
       \new Staff = "left" {
         \set Staff.midiInstrument = #"acoustic grand"
         \set Staff.midiMinimumVolume = #0.6
         \set Staff.midiMaximumVolume = #0.7
-        \lh
+        \removeWithTag #'mini \lh
       }
     >>
   >>
@@ -237,6 +238,11 @@ dynamics = {
       \context {
         % add the RemoveEmptyStaffContext that erases rest-only staves
         \Staff \RemoveEmptyStaves
+      }
+      \context {
+        \Score
+        % Remove all-rest staves also in the first system
+        \override VerticalAxisGroup.remove-first = ##t
       }
       \context {
         \Voice

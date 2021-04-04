@@ -96,7 +96,9 @@ lh-bridge = \relative c, {
   <g g'>8 d'' g d q d g g,
   <ges, ges'>8 ees'' ges ees q ees ges ges,
   <f, f'>8-> bes' c f~-> f c bes <e,, e'>8~->
-  % \once \override Beam.auto-knee-gap = #4 TODO: use knee beam?
+  \tag #'mini {
+    \once \override Beam.auto-knee-gap = #3 % TODO: use knee beam?
+  }
   q8 bes''' c e e,4\( e,\) % TODO: repeated accidental?
 
   <c c'>8-. \repeat unfold 7 { q-. }
