@@ -1,0 +1,49 @@
+根據Piano Version編寫(不是根據MV版, 有一些地方是不同的，下面有提到一些)。
+
+(很抱歉錄了不少次但都是有點瑕疪..)
+
+琴譜下載：
+https://music.bensonby.me/continuous-misfortune-incident-of-mr-e
+
+===============================
+分析/註釋：
+
+00:00 第1-4小節看似是普通的和弦伴奏，其實要聆聽：第1-2小節 Bb major chord 底下由D落C 變sus chord聲音，以及第3-4小節Gm7 chord 底下由A上Bb 的resolution聲音。再放大一點看這4個小節其實是D C A Bb一整句。
+
+00:35 第13小節：終於從I chord 及vi7 chord走出來，用ii chord 然後V chord的imperfect cadence完成這個段落，感覺變得開揚。
+
+00:44 第16-17小節：MV版比這個版本(鋼琴版) 少了兩拍
+
+00:49 第18-22小節：第一次chorus承接之前的pattern，留意右手top note 的轉變與和弦的關係，也要聆聽左手有slur的兩小句
+
+01:15 第27-28小節：留意右手部分與旋律一樣(如獲至寶，千金也不換) ，如果是作為伴奏並有歌手，要聆聽互相的聲音
+
+01:28 第32-35小節：突出右手一大句的感覺 (整首歌很少這類大句) ，而且有一種憂怨的感覺，留意第35小節Gb的效果
+
+01:39 第36-39小節：從第二段開始伴奏的節拍較強，但不要變成一拍到一拍機器地彈(可以留意一下右手的和弦變化)。
+
+01:52 第40-43小節：留意切分音的效果，及這裡4小節的buildup去第二次chorus。從36-39小節一直的右手D，到40小節的Bb，41小節因為重覆而增加的tension，上升至43小節的C，再到44小節開始chorus的D
+
+02:03 第44-55小節：與第一次chorus相同，留意右手的top note 聲音變化，左手的一些短句，還有右手與旋律重疊的部分
+
+02:34 第54-55小節：第54小節右手最後一拍的top note是Ab，卻已augmented second向上升至第55小節的B，是不自然的voice leading。因為要依照原版所以琴譜照樣寫，但建議實際演奏時改為G做top note (即是彈B, D, G，Ab應該向下resolve去G) 
+
+02:42 第57小節右手的八度Eb Db C F F# G如果當一整句來彈是很奇怪的句子。如果聽MV版就會明白要突出的只有F F# G，半音 F 同 F# 是用來帶入G (vi chord)開始的鋼琴solo部分。至於頭3個音其實是跟旋律一樣，並不是重點，所以這裡特別寫了mp。
+
+02:44 第58-65小節：整首樂曲技巧上最困難的段落，我找到了以下影片解釋彈八度及arpeggio 的技巧，希望能令大家練習的時候更容易掌握技巧(切忌死練！)。
+Arpeggios and scales (Pianist Magazine): https://youtu.be/uLnUNwd0AqM
+Arpeggios (Nahre Sol): https://youtu.be/fwQci1cRiFU
+Octaves (Pianist Magazine): https://youtu.be/qheHl3QOdtg
+
+02:58第63小節：MV的音樂和鋼琴版的影像都是D音，但鋼琴版的聲音是F音，由於D音比較合理所以這裡選擇了D音。
+
+03:01 第64小節：鋼琴版在這個小節的後半部分與原本MV不同。原本MV在這裡用了minor chord有更dark的感覺，右手的running notes的音也有不同。這個琴譜依照鋼琴版編寫，harmony是Eb major。 
+
+03:04 第65小節：這裡的一串arpeggios用了stem direction 表示左右手的分佈 (向上是右手，向下是左手) 。效果應該跟原本的鋼琴版MV一樣。
+
+03:19 第70-71小節：這裡的跳音是分開的，不應用pedal連住。(當然可以用pedal加強chord的效果，但不是連住)。
+Pedalling techniques: https://www.pianocareer.com/piano-pedal/piano-pedals-art/ )
+
+03:25 第72小節：右手最後一拍的augmented second極不自然，Gb (Bb major scale 的flat sixth) 在這裡應該向下resolve去F。 跟以上54-55小節的解釋一樣，建議實際演奏時彈F，不彈A
+
+03:44 第78-79小節：留意左手部分power chord那些五度的聲音效果，要逐漸build up至第80小節
