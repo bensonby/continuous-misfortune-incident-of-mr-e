@@ -14,9 +14,7 @@ chords-full = \chordmode {
   c1:m9 f2 ees:m7
 
   % episode-A
-  g1:m7 
-  \set chordNameSeparator = \markup { "/" }
-  f1:6.11 e1:m7.5- ees2:m f:sus4.9-
+  g1:m7 bes1:maj7/f e1:m7.5- ees2:m f:sus4.9-
 
   % verse-B
   bes1 bes:sus2 g:m9 g:m9
