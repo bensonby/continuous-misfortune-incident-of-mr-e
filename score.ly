@@ -133,7 +133,7 @@ dynamics = {
       \set Staff.midiMinimumVolume = #0.9
       \set Staff.midiMaximumVolume = #1
       \new Voice = "melody" {
-        \melody
+        \transpose bes ees' { \melody }
       }
       \context Lyrics = "lyrics" { \lyricsto "melody" { \lyricsmain } }
     >>
@@ -143,14 +143,14 @@ dynamics = {
         \set Staff.midiInstrument = #"acoustic grand"
         \set Staff.midiMinimumVolume = #0.6
         \set Staff.midiMaximumVolume = #0.7
-        \removeWithTag #'mini \rh
+        \transpose bes ees' { \removeWithTag #'mini \rh }
       }
       \new Dynamics = "Dynamics_pf" \removeWithTag #'mini \dynamics
       \new Staff = "left" {
         \set Staff.midiInstrument = #"acoustic grand"
         \set Staff.midiMinimumVolume = #0.6
         \set Staff.midiMaximumVolume = #0.7
-        \removeWithTag #'mini \lh
+        \transpose bes ees' { \removeWithTag #'mini \lh }
       }
     >>
   >>
