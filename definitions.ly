@@ -4,6 +4,7 @@ cl = \change Staff = "left"
 pCresc = \markup \concat { \dynamic "p" \italic \larger "  cresc." }
 
 shpSlurA = \shape #'((0 . 0) (0 . 0.5) (0 . 0.5) (0 . 0)) PhrasingSlur
+shpSlurB = \shape #'((0 . 0.7) (0 . 0.7) (0 . 0.6) (0 . 0.3)) PhrasingSlur
 hairpinA = \once \override Hairpin.Y-offset = #1
 dynamicShiftA = \once \override DynamicText.Y-offset = #-5.2
 dynamicShiftB = \once \override DynamicText.X-offset = #-0.8
@@ -12,6 +13,7 @@ dynamicShiftD = {
   \once \override DynamicText.Y-offset = #-0.02
   \once \override DynamicText.X-offset = #-0.7
 }
+dynamicShiftE = \once \override DynamicText.X-offset = #0.06
 textScriptShiftA = \once \override TextScript.extra-offset = #'(-0.7 . 0.6)
 scriptShiftA = \once \override Script.padding = #0.3
 scriptShiftB = \once \override Script.padding = #0.4

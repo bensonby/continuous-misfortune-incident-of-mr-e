@@ -23,7 +23,7 @@ global = {
 }
 
 rh = \relative c' {
-  \clef bass
+  \clef treble
   \metronomePaddingA
   \tag #'mini { \metronomePaddingB }
   \global-tempo
@@ -68,6 +68,7 @@ dynamics = {
   s1\mf s1*3
 
   % verse-A
+  \dynamicShiftE
   s1\mp s1*6 s2 s4..\< s16\!
   s1*2 s2. s8.\> s16\! s1*2
 
@@ -121,7 +122,7 @@ dynamics = {
 \score {
   <<
     \new ChordNames {
-      \chords-full
+      \transpose bes ees' { \chords-full }
     }
     \new Staff = "melodystaff" \with {
       fontSize = #-3
@@ -133,7 +134,7 @@ dynamics = {
       \set Staff.midiMinimumVolume = #0.9
       \set Staff.midiMaximumVolume = #1
       \new Voice = "melody" {
-        \transpose bes ees' { \melody }
+        \transpose bes ees { \melody }
       }
       \context Lyrics = "lyrics" { \lyricsto "melody" { \lyricsmain } }
     >>
@@ -219,7 +220,7 @@ dynamics = {
   \score {
     \new StaffGroup <<
       \new ChordNames {
-        \chords-full
+        \transpose bes ees' { \chords-full }
       }
       \new Staff = "melodystaff" \with {
         fontSize = #-3

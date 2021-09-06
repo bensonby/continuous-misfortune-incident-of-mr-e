@@ -69,7 +69,9 @@ lh-chorus-B = \relative c, {
   f4\( c'8 f\) bes,\( f' aes bes,\)
   ees,2~ ees8 bes'4 ees8
   ees,4. bes'8 ees4 ees,
+  \shpSlurB
   d8\( aes' d f~ f\) d d,4
+  \shpSlurB
   g8\( d' f g g, d' f4\)
   c,8\( g' c ees~ ees\) \cr g \cl c, c,
   f8 c' f c ees, bes' ees bes

@@ -88,7 +88,7 @@ rh-episode-B = \relative c' {
   <g g'>8 \tuplet 3/2 8 { ees'16 bes g } \tuplet 6/4 4 { ees bes g ees bes g }
   <fis a d>8 \tuplet 3/2 8 { d'16 fis a } \tuplet 6/4 4 {  d fis a \ottava #1 d fis a }
   \tuplet 6/4 4 {
-    bes16 a g \ottava #0 d bes a g d c bes a bes
+    bes16 a g d bes a \ottava #0 g d c bes a bes
     c bes c d ees d c bes a bes a g
     \ottava #1 a'' g
     \tag #'mini {
@@ -99,7 +99,8 @@ rh-episode-B = \relative c' {
     }
     \tag #'print { d } \ottava #0 bes a g d bes a g a bes
     c bes c d ees d c bes c bes a bes
-    g'' f ees bes g f ees bes a g a bes
+    \ottava #1
+    g'' f ees \ottava #0 bes g f ees bes a g a bes
     c bes c d ees d ees f g fis g a
   }
   << {
@@ -116,7 +117,7 @@ rh-bridge = \relative c'' {
   <g bes d>4\( <bes d bes'>2 q4\)
   <ges bes ees>4\( <bes ees bes'>2 q4\)
   <f bes c f>4.-> q8~-> q4. <g d' e g>8~->
-  q2 \tuplet 6/4 { g''16\( d c g d c } g4\)
+  q2 \tuplet 6/4 { \ottava #1 g''16\( d c \ottava #0 g d c } g4\)
   <g, bes ees>8-. \repeat unfold 7 { q-. }
   <f bes f'>8-. \repeat unfold 7 { q-. }
   \makeOctaves 1 { ges'8\( ges ges f ges f ges a~ }
@@ -141,7 +142,6 @@ rh-chorus-C = \relative c'' {
   r4 <c f> <bes ees ges>2
 }
 rh-outro = \relative c' {
-  \clef bass
   \repeat unfold 8 { <bes d>16 f }
   \repeat unfold 7 { <bes c>16 f } q f~
   \repeat unfold 8 { <f a>16 d }
